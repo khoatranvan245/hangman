@@ -1,0 +1,100 @@
+.hangman_container {
+    position: relative;
+}
+
+.gallow {
+    position: relative;
+}
+
+.gallow .base {
+    width: 80px;
+    border: 3px black solid;
+}
+
+.gallow .pillar {
+    height: 200px;
+    width: 0;
+    border: 3px black solid;
+    transform: translateX(40px)
+}
+
+.gallow .hanger .horizontal_line {
+    width: 90px;
+    border: 3px black solid;
+    margin-left: 40px;
+}
+
+.gallow .hanger .vertical_line {
+    height: 20px;
+    border: 3px black solid;
+    width: 0;
+    position: absolute;
+    right: 0;
+}
+
+.man {
+    position: absolute;
+    right: -3px;
+    top: 29px;
+    transform: translateX(14px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.man .head {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 5px black solid;
+}
+
+.man .body {
+    height: 40px;
+    width: 0;
+    border: 3px solid black;
+    position: relative;
+}
+
+.man .arm {
+    display: flex;
+    position: absolute;
+    top: 48px;
+}
+
+.man .right_arm,
+.left_arm {
+    width: 30px;
+    border: 3px solid black;
+    height: 0;
+}
+
+.man .left_arm {
+    transform: translateX(2px) rotate(30deg);
+}
+
+.man .right_arm {
+    transform: translateX(-2px) rotate(-30deg)
+}
+
+.man .leg {
+    display: flex;
+    position: absolute;
+    bottom: 0;
+}
+
+.man .left_leg,
+.right_leg {
+    width: 35px;
+    border: 3px solid black;
+    height: 0;
+}
+
+.man .left_leg {
+    transform: translate(4px, 12px) rotate(-40deg);
+}
+
+.man .right_leg {
+    transform: translate(-4px, 12px) rotate(40deg);
+}
