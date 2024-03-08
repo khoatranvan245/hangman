@@ -1,5 +1,6 @@
 .hangman_container {
     position: relative;
+    transform: translateX(-10px);
 }
 
 .gallow {

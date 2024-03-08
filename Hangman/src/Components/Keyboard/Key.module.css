@@ -7,4 +7,12 @@
     justify-content: center;
     text-transform: uppercase;
     font-weight: 700;
+    cursor: pointer;
+}
+
+.disabled {
+    color: #a7a7a7;
+    border: 3px #a7a7a7 solid;
+    cursor: default;
+    pointer-events: none;
 }
