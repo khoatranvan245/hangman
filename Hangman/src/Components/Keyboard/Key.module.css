@@ -1,0 +1,10 @@
+.key {
+    font-family: sans-serif;
+    border: 3px black solid;
+    aspect-ratio: 1/1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+    font-weight: 700;
+}
