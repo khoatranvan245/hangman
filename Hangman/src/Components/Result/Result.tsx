@@ -1,23 +1,16 @@
 import styles from './Result.module.css'
-type resultProp = { word: string }
+type resultProp = {
+  lettersInWord: string[]
+}
 
-const Result = ({ word }: resultProp) => {
-  const createArrayFromString = (word: string): string[] => {
-    const array: string[] = []
-
-    for (let i: number = 0; i < word.length; i++) {
-      array.push(word.charAt(i))
-    }
-
-    return array
-  }
-
-  let lettersInWord = createArrayFromString(word)
-
+const Result = ({ lettersInWord }: resultProp) => {
   return (
     <div className={styles.result_container}>
       {lettersInWord.map((letter, index) => (
-        <div className={styles.letter} key={index}>
+        <div
+          className={styles.letter}
+          key={index}
+        >
           <p className={styles.hide}>{letter}</p>
         </div>
       ))}

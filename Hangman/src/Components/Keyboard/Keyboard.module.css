@@ -6,3 +6,9 @@
     grid-template-columns: repeat(8, 1fr);
     gap: 10px;
 }
+
+@media (max-width: 750px) {
+    .keyboard_container {
+        width: 400px;
+    }
+}

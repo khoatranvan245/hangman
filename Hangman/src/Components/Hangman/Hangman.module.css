@@ -99,3 +99,11 @@
 .man .right_leg {
     transform: translate(-4px, 12px) rotate(40deg);
 }
+
+.bodyPart {
+    opacity: 0;
+}
+
+.show{
+    opacity: 1;
+}

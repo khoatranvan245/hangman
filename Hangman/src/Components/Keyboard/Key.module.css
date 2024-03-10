@@ -11,8 +11,8 @@
 }
 
 .disabled {
-    color: #a7a7a7;
-    border: 3px #a7a7a7 solid;
+    color: #757575;
+    border: 3px #757575 solid;
     cursor: default;
     pointer-events: none;
 }
